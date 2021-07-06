@@ -23,9 +23,4 @@ mono_crash.*.json
 **/.DS_Store*
 
 # Android export
-android/build/build/
-android/build/assets/
-android/build/.gradle
-android/build/gradlew.bat
-android/build/local.properties
-android/build/**/gradle-wrapper.jar
+android/build/*
