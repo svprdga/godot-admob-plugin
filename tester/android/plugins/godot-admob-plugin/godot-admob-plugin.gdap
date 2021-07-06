@@ -1,0 +1,5 @@
+[config]
+
+name="GodotAdmobAndroidPlugin"
+binary_type="local"
+binary="godot-admob-android-plugin.aar"
