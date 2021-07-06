@@ -14,7 +14,7 @@ class GodotAdmobAndroidPlugin(godot: Godot) : GodotPlugin(godot) {
     }
 
     fun say_hello(): String {
-        return "Hello from the plugin!"
+        return "Hello after reconstruction!"
     }
 
     fun say_name(name: String): String {
