@@ -1,0 +1,3 @@
+rootProject.name = "GodotAdmobAndroidPlugin"
+include ':application'
+include ':godotadmobandroidplugin'
