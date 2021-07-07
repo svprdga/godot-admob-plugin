@@ -1,0 +1,22 @@
+{
+  "category": "misc", 
+  "version": "1.0.0", 
+  "display_name": "TestPlugin", 
+  "name": "test-plugin", 
+  "license": "MIT", 
+  "author": {
+    "url": "https://your_site.com", 
+    "donate": "Url to your donate page, or remove if not needed", 
+    "name": "Your Name"
+  }, 
+  "url": "https://github.com/YourGitHubName/your_github_repository", 
+  "godot_version": "3.2.4", 
+  "platform_ios": {
+    "files": {
+      "test-plugin.gdip": "ios/plugins/test-plugin/", 
+      "bin/test-plugin.debug.xcframework": "ios/plugins/test-plugin/test-plugin.debug.xcframework", 
+      "bin/test-plugin.release.xcframework": "ios/plugins/test-plugin/test-plugin.release.xcframework"
+    }
+  }, 
+  "description": ""
+}
