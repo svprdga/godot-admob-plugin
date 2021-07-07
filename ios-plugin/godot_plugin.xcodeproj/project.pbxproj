@@ -10,6 +10,7 @@
 		515DBA0925EE9E1E00187A4B /* SwiftClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515DBA0825EE9E1E00187A4B /* SwiftClass.swift */; };
 		90CAAA9924E71FF10013969F /* godot_plugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90CAAA9824E71FF10013969F /* godot_plugin.mm */; };
 		90CAAAA424E724C50013969F /* godot_plugin_class.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90CAAAA324E724C50013969F /* godot_plugin_class.mm */; };
+		A564559C844B169777B8B2F1 /* Pods_godot_plugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59399115C2AF0E63CB6AA05 /* Pods_godot_plugin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,9 @@
 		90CAAA9824E71FF10013969F /* godot_plugin.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_plugin.mm; sourceTree = "<group>"; };
 		90CAAAA324E724C50013969F /* godot_plugin_class.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = godot_plugin_class.mm; sourceTree = "<group>"; };
 		90CAAAA524E724D00013969F /* godot_plugin_class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = godot_plugin_class.h; sourceTree = "<group>"; };
+		A8FF102E0ED67FEED83B5202 /* Pods-godot_plugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot_plugin.debug.xcconfig"; path = "Target Support Files/Pods-godot_plugin/Pods-godot_plugin.debug.xcconfig"; sourceTree = "<group>"; };
+		B67732E3E57578152AF89C86 /* Pods-godot_plugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot_plugin.release.xcconfig"; path = "Target Support Files/Pods-godot_plugin/Pods-godot_plugin.release.xcconfig"; sourceTree = "<group>"; };
+		C59399115C2AF0E63CB6AA05 /* Pods_godot_plugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_godot_plugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A564559C844B169777B8B2F1 /* Pods_godot_plugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62844117A079428792E8A3D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8FF102E0ED67FEED83B5202 /* Pods-godot_plugin.debug.xcconfig */,
+				B67732E3E57578152AF89C86 /* Pods-godot_plugin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		90CAAA8B24E71FF10013969F = {
 			isa = PBXGroup;
 			children = (
 				90CAAA9624E71FF10013969F /* godot_plugin */,
 				90CAAA9524E71FF10013969F /* Products */,
 				90CAAAA824E72A8A0013969F /* Frameworks */,
+				62844117A079428792E8A3D6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +93,7 @@
 		90CAAAA824E72A8A0013969F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C59399115C2AF0E63CB6AA05 /* Pods_godot_plugin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 90CAAA9D24E71FF10013969F /* Build configuration list for PBXNativeTarget "godot_plugin" */;
 			buildPhases = (
+				E9F93932A1E77B692F02FAFA /* [CP] Check Pods Manifest.lock */,
 				90CAAA9024E71FF10013969F /* Sources */,
 				90CAAA9124E71FF10013969F /* Frameworks */,
 				90CAAA9224E71FF10013969F /* CopyFiles */,
@@ -134,6 +151,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E9F93932A1E77B692F02FAFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-godot_plugin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		90CAAA9024E71FF10013969F /* Sources */ = {
@@ -261,6 +303,7 @@
 		};
 		90CAAA9E24E71FF10013969F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8FF102E0ED67FEED83B5202 /* Pods-godot_plugin.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (
@@ -299,6 +342,7 @@
 		};
 		90CAAA9F24E71FF10013969F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67732E3E57578152AF89C86 /* Pods-godot_plugin.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = (

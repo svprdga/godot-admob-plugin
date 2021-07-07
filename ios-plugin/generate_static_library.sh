@@ -55,5 +55,6 @@ xcodebuild -create-xcframework \
     -library "./bin/sim_debug.xcarchive/Products/usr/local/lib/${OUT}.a" \
     -output "./bin/${OUT}.debug.xcframework"
 
-
+cp -R "./bin/${OUT}.release.xcframework" ../godot-tester/ios/plugins
+cp -R "./bin/${OUT}.debug.xcframework" ../godot-tester/ios/plugins
 

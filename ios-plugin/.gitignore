@@ -35,3 +35,20 @@ bin/*
 
 # Don't commit Godot source code
 godot/
+
+**/ios/**/*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+/*sync/
+.sconsign.dblite
+.tags*
+.vagrant/
+DerivedData/
+Icon?
+Pods/
+.symlinks/
+profile
+xcuserdata
+.generated/
