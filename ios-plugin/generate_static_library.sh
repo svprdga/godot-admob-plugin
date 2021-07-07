@@ -2,7 +2,7 @@
 
 SCHEME=${1:-godot_plugin}
 PROJECT=${2:-godot_plugin.xcodeproj}
-OUT=test-plugin
+OUT=godot-admob-ios-plugin
 CLASS=TestPlugin
 
 xcodebuild archive \

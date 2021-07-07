@@ -1,3 +1,3 @@
 
-void test_plugin_init();
-void test_plugin_deinit();
+void godot_admob_ios_plugin_init();
+void godot_admob_ios_plugin_deinit();

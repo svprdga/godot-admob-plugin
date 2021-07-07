@@ -6,12 +6,12 @@
 
 PluginClass *plugin;
 
-void test_plugin_init() {
+void godot_admob_ios_plugin_init() {
     plugin = memnew(PluginClass);
-    Engine::get_singleton()->add_singleton(Engine::Singleton("TestPlugin", plugin));
+    Engine::get_singleton()->add_singleton(Engine::Singleton("GodotAdmobIosPlugin", plugin));
 }
 
-void test_plugin_deinit() {
+void godot_admob_ios_plugin_deinit() {
    if (plugin) {
        memdelete(plugin);
    }
