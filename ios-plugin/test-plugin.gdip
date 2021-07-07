@@ -1,0 +1,14 @@
+
+[config]
+name="TestPlugin"
+binary="test-plugin.xcframework"
+initialization="test_plugin_init"
+deinitialization="test_plugin_deinit"
+
+[dependencies]
+linked=[]
+embedded=[]
+system=[]
+capabilities=[]
+files=[]
+[plist]
